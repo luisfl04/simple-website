@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    color: var(--font-color);
+}
+
+body{
+    font-family: monospace;
+    background: var(--bg)
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.light-theme{
+    --bg: var(--green);
+    --font-color: var(--dark);
+    --btnbg: var(--dark);
+    --btnfontcolor: var(--white)
+}
+
+.dark-theme{
+    --bg: var(--dark);
+    --font-color: var(--green);
+    --btnbg: var(--white);
+    --btnfontcolor: var(--dark)
+}   
+
+.btn{
+    color: var(--btnfontcolor);
+    background: var(--btnbg);
+    position:absolute;
+    top:150px;
+    left: 50%;
+    height: 50px;
+    width:50px;
+    border-radius:50%;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+/* adicionando foco ao botão: */
+.btn:focus{
+    outline-style:none ;
+}
+
+:root{
+    --green: #00ff00;
+    --white:#ffffff;
+    --dark:#000000
+}
